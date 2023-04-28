@@ -1,0 +1,566 @@
+// MEDIA (1024px | 768px | 480px)
+@media only screen and (min-width: 1281px) {
+
+    html{
+        font-size: 85%;
+    }
+
+    .bs-carousel {
+        padding: 0 15%;
+        padding-top: 6rem;
+        padding-bottom: 2rem;
+    }
+
+    .home {
+
+        .image {
+            width: 35%;
+            margin-bottom: 2rem;
+        }
+
+        .content {
+            width: 65%;
+            margin-bottom: 4rem;
+        }
+    }
+
+    .contact {
+
+        .box-container {
+            align-items: center;
+        }
+    }
+
+}
+
+
+/* 1200px - Para pantallas panorámicas, principalmente portátiles y de escritorio */
+@media only screen and (max-width: 1280px) and (min-width: 769px) {
+
+    html{
+        font-size: 80%;
+    }
+
+    section{
+        padding: 0 5%;
+        //border: 5px solid purple;
+    }
+
+    .bs-carousel {
+        min-height: 100vh;
+        padding: 0 13%;
+        padding-top: 6rem;
+        padding-bottom: 2rem;
+    }
+
+    header {
+        padding: .8rem 5%;
+    }
+
+    footer {
+        padding: .8rem 5%;
+        //border: 1px solid darkorchid;
+    
+        .box-container {
+            justify-content: space-between;
+            //border: 1px solid darkorchid;
+   
+            .box {
+                width: 23%;
+                //border: 1px solid darkorchid;
+            }
+        }
+   
+    }
+
+    .home {
+
+        .image {
+            width: 40%;
+            //margin-top: 8rem;
+            margin-bottom: 2rem;
+        }
+
+        .content {
+            width: 60%;
+            margin-bottom: 4rem;
+
+            h1 {
+                font-size: 2.8rem;
+            }
+    
+            p {
+                font-size: 1.3rem;
+                padding: .5rem 0;
+            }
+    
+            .slogan{
+                font-size: 1.8rem;
+                padding: .5rem 0;
+            }
+        }
+    }
+
+    .about {
+        padding-top: 4rem;
+
+        .column {
+
+            .image {
+                flex: 1 1 50%;
+                margin-bottom: 2rem;
+            }
+
+            .content {
+                flex: 1 1 45%;
+
+                .buttons {
+
+                    a {
+                        //width: 100%;
+                        text-align: center;
+                    }
+
+                }
+            }
+        }
+    }
+
+    .services {
+        padding-top: 4rem;
+
+        .box-container {
+            margin-bottom: 2rem;
+            
+            .box {
+                flex: 1 1 45%;
+            }
+        }
+    }
+
+    .pricing {
+        padding-top: 4rem;
+
+        .box-container {
+            margin-bottom: 2rem;
+            
+            .box {
+                flex: 1 1 45%;
+            }
+        }
+    }
+
+    .feedback {
+
+        form {
+            max-width: 90%;
+        }
+    }
+
+    .customers {
+        padding-top: 4rem;
+
+        .box-container {
+            margin-bottom: 2rem;
+            
+            .box {
+                flex: 1 1 45%;
+                max-width: 100%;
+            }
+
+        }
+    }
+
+    .contact {
+        padding-top: 4rem;
+
+        .box-container {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            
+            .image {
+                flex: 1 1 50%;
+            }
+            
+            .box {
+                flex: 1 1 45%;
+                margin: 0 1rem;
+            }
+        }
+    }
+}
+
+
+/* 768px - Tabletas de diez pulgadas como el iPad (768×1024), en modo vertical */
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+
+    html{
+        font-size: 80%;
+    }
+
+    section{
+        padding: 0 3%;
+        //border: 5px solid purple;
+    }
+
+    .bs-carousel {
+        min-height: 60vh;
+        padding: 0 3%;
+        padding-top: 6rem;
+        padding-bottom: 2rem;
+    }
+
+    header {
+        padding: .8rem 3%;
+
+        label {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #fff;
+            border-top: .1rem solid rgba(0,0,0,.2);
+            box-shadow: 0 .5rem .5rem rgba(0,0,0,.1);
+            transform-origin: top;
+            transform: scaleY(0);
+            transition: .2s linear;
+            opacity: 0;
+            width: 100%;
+            padding: .5rem 1.5rem;
+
+            a {
+                display: block;
+                font-size: 1rem;
+                font-weight: 500;
+                margin: .5rem 0;
+            }
+
+            a:hover {
+                color: $color0;
+            }
+        }
+
+        input:checked ~ .menu {
+            transform: scaleY(1);
+            opacity: 1;
+        }
+
+        input:checked ~ label::before {
+            content: '\f00d';
+        }
+    }
+
+    footer {
+        padding: .8rem 3%;
+        //border: 1px solid darkorchid;
+    
+        .box-container {
+            justify-content: space-between;
+            //border: 1px solid darkorchid;
+   
+            .box {
+                width: 47%;
+                //border: 1px solid darkorchid;
+            }
+        }
+   
+    }
+
+    .home {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+
+        .image {
+            width: 100%;
+            margin-top: 8rem;
+            margin-bottom: 2rem;
+        }
+
+        .content {
+            width: 100%;
+            margin-bottom: 4rem;
+        }
+    }
+
+    .about {
+        padding-top: 4rem;
+
+        .column {
+
+            .image {
+                flex: 1 1 100%;
+                margin-bottom: 2rem;
+            }
+
+            .content {
+                flex: 1 1 100%;
+
+                .buttons {
+
+                    a {
+                        //width: 100%;
+                        text-align: center;
+                    }
+
+                }
+            }
+        }
+    }
+
+    .services {
+        padding-top: 4rem;
+
+        .box-container {
+            margin-bottom: 2rem;
+            
+            .box {
+                flex: 1 1 45%;
+            }
+        }
+    }
+
+    .pricing {
+        padding-top: 4rem;
+
+        .box-container {
+            margin-bottom: 2rem;
+            
+            .box {
+                flex: 1 1 45%;
+            }
+        }
+    }
+
+    .feedback {
+
+        form {
+            max-width: 90%;
+        }
+    }
+
+    .customers {
+        padding-top: 4rem;
+
+        .box-container {
+            margin-bottom: 2rem;
+            
+            .box {
+                flex: 1 1 45%;
+            }
+            .box:last-child {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .contact {
+        padding-top: 4rem;
+
+        .box-container {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            
+            .image {
+                flex: 1 1 100%;
+            }
+            
+            .box {
+                flex: 1 1 100%;
+                margin: 0 1rem;
+            }
+        }
+    }
+}
+
+
+/* 480px - Para dispositivos con pantallas pequeñas, como los teléfonos, en modo horizontal */
+@media only screen and (max-width: 480px) {
+    
+    html{
+        font-size: 80%;
+    }
+
+    section{
+        padding: 0 3%;
+        //border: 5px solid purple;
+    }
+
+    .bs-carousel {
+        min-height: 50vh;
+        padding: 0 3%;
+        padding-top: 6rem;
+        padding-bottom: 2rem;
+    }
+
+    header {
+        padding: .8rem 3%;
+
+        label {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #fff;
+            border-top: .1rem solid rgba(0,0,0,.2);
+            box-shadow: 0 .5rem .5rem rgba(0,0,0,.1);
+            transform-origin: top;
+            transform: scaleY(0);
+            transition: .2s linear;
+            opacity: 0;
+            width: 100%;
+            padding: .5rem 1.5rem;
+
+            a {
+                display: block;
+                font-size: 1rem;
+                font-weight: 500;
+                margin: .5rem 0;
+            }
+
+            a:hover {
+                color: $color0;
+            }
+        }
+
+        input:checked ~ .menu {
+            transform: scaleY(1);
+            opacity: 1;
+        }
+
+        input:checked ~ label::before {
+            content: '\f00d';
+        }
+    }
+
+    footer {
+        padding: .8rem 3%;
+        //border: 1px solid darkorchid;
+    
+        .box-container {
+            justify-content: space-between;
+            //border: 1px solid darkorchid;
+   
+            .box {
+                width: 47%;
+                //border: 1px solid darkorchid;
+            }
+        }
+   
+    }
+
+    .home {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+
+        .image {
+            width: 100%;
+            margin-top: 8rem;
+            margin-bottom: 2rem;
+        }
+
+        .content {
+            width: 100%;
+            margin-bottom: 4rem;
+        }
+    }
+
+    .about {
+        padding-top: 4rem;
+
+        .column {
+
+            .image {
+                flex: 1 1 100%;
+                margin-bottom: 2rem;
+            }
+
+            .content {
+                flex: 1 1 100%;
+
+                .buttons {
+
+                    a {
+                        //width: 100%;
+                        text-align: center;
+                    }
+
+                }
+            }
+        }
+    }
+
+    .services {
+        padding-top: 4rem;
+
+        .box-container {
+            margin-bottom: 2rem;
+            
+            .box {
+                flex: 1 1 100%;
+            }
+        }
+    }
+
+    .pricing {
+        padding-top: 4rem;
+
+        .box-container {
+            margin-bottom: 2rem;
+            
+            .box {
+                flex: 1 1 100%;
+            }
+        }
+    }
+
+    .feedback {
+
+        form {
+            max-width: 90%;
+        }
+    }
+
+    .customers {
+        padding-top: 4rem;
+
+        .box-container {
+            margin-bottom: 2rem;
+            
+            .box {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+            .box:last-child {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .contact {
+        padding-top: 4rem;
+
+        .box-container {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            
+            .image {
+                flex: 1 1 100%;
+            }
+            
+            .box {
+                flex: 1 1 100%;
+                margin: 0 1rem;
+            }
+        }
+    }
+}

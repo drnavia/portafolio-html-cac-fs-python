@@ -1,0 +1,95 @@
+// FOOTER
+footer {
+    background: $color-footer;
+    //padding: .8rem 9%;
+
+    .box-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .box {
+            width: 23%;
+            margin: 0 .5rem;
+            h3 {
+                font-size: 1rem;
+                color: $color9;
+                text-decoration: underline;
+                text-underline-offset: .5rem;
+                padding: 1rem 0;
+            }
+
+            .info {
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+
+                a {
+                    display: block;
+                    font-size: 1rem;
+                    color: $color-grey1;
+    
+                    i {
+                        font-size: 1rem;
+                        color: $color-grey0;
+                        height: 1rem;
+                        line-height: .5rem;
+                        width: 1.3rem;
+                        padding-left: 0;
+                    }
+                }
+
+                a:hover{
+                    text-decoration: underline;
+                }
+
+
+                p {
+                    font-size: 1rem;
+                    color: $color-grey1;
+
+                    i {
+                        font-size: 1rem;
+                        color: $color-grey0;
+                        height: 1.5rem;
+                        line-height: .5rem;
+                        width: 1.5rem;
+                        padding-left: 0;
+                    }
+                }
+
+                iframe {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .credit {
+        font-size: 1rem;
+        font-weight: normal;
+        color: $color-white;
+        border-top: .1rem solid $color-grey2;
+        margin-top: 1rem;
+        padding: 1rem 9%;
+        text-align: center;
+
+        span {
+            font-weight: 900;
+            color: $color-grey2;
+
+            span {
+                font-weight: 900;
+                color: $color0;
+            
+                span {
+                    font-weight: 900;
+                    color: $color9;
+                }
+            }
+        }
+    }
+}
+

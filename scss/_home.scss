@@ -1,0 +1,52 @@
+// HOME - INICIO
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:url(../img/home-bg-img.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .content {
+        width: 60%;
+        
+        h1 {
+            font-size: 3rem;
+            color: $color-black;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 1.5rem;
+            color: $color-grey1;
+            padding: 1rem 0;
+        }
+
+        .slogan{
+            font-family: 'Lobster', cursive;
+            font-size: 2rem;
+            color: $color0;
+            padding: 1rem 0;
+        }
+    }
+
+    .image {
+        width: 40%;
+
+        img{
+            width: 100%;
+            animation: float 3s linear infinite;
+        }
+    }
+}
+
+
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(-3.5rem);
+    }
+}
+

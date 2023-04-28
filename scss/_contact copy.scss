@@ -1,0 +1,232 @@
+// FEEDBACK
+.feedback {
+    text-align: center;
+    background: $color-bckgrd;
+    padding: 3rem 1rem;
+
+    h3 {
+        font-size: 2.5rem;
+        color: $color9;
+        text-align: center;
+        text-transform: uppercase;
+        background-clip: text;
+        padding: 1rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+        color: $color-white;
+    }
+
+    form {
+        display: flex;
+        border: .1rem solid white;
+        border-radius: 3rem;
+        max-width: 50%;
+        margin: 1rem auto;
+        padding: .5rem;
+
+        input[type="email"]{
+            font-size: 1.2rem;
+            color:$color-yellow;
+            background: none;
+            text-transform: none;
+            width: 100%;
+            padding: 0 2rem;
+        }
+
+        input[type="email"]::placeholder{
+            font-size: 1.2rem;
+            color: $color-grey1;
+            text-transform: capitalize;
+        }
+
+        input[type="submit"]{
+            font-size: 1.3rem;
+            color: $color-white;
+            background: $color0;
+            border-radius: 5rem;
+            width:20rem;
+            cursor: pointer;
+            padding: .3rem;
+        }
+
+        input[type="submit"]:hover{
+            font-size: 1.3rem;
+            background: $color9;
+            padding: .3rem;
+        }
+    }
+}
+
+// CONTACT
+.contact {
+
+    .box-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-between;
+        margin-bottom: 10rem;
+    
+        .image {
+            flex: 1 1 40%;
+   
+            img {
+                width: 100%;
+            }
+        }
+    
+        .box {
+            flex: 1 1 60%;
+            background: $color-white;
+            border: .1rem solid rgba(0,0,0,.2);
+            border-radius: .5rem;
+            box-shadow: 0 .5rem .5rem rgba(0,0,0,.2);
+            padding: 1rem 2rem;
+    
+            .form {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .form__label {
+                display: block;
+                font-weight: 700;
+                cursor: pointer;
+                padding: 10px;
+            }
+            
+            .form__grupo-input {
+                position: relative;
+            }
+            
+            .form__input {
+                width: 100%;
+                background: $color-white;
+                border-bottom: .1rem solid rgba(0,0,0,.5);
+                height: 45px;
+                line-height: 45px;
+                padding: 0 40px 0 10px;
+                transition: .3s ease all;
+            }
+            
+            .form__input:focus {
+                border-bottom: .2rem solid rgba(0, 117, 255, 0.5);
+                outline: none;
+                box-shadow: 3px 8px 30px rgba(163, 163, 163, 0.4);
+            }
+            
+            .form__input-error {
+                display: none;
+                font-size: 12px;
+                margin-top: .5rem;
+                margin-bottom: 0;
+            }
+            
+            .form__input-error-activo {
+                display: block;
+            }
+            
+            .form__validacion-estado {
+                position: absolute;
+                right: 10px;
+                bottom: 15px;
+                font-size: 16px;
+                opacity: 0;
+                z-index: 100;
+            }
+            
+            .form__checkbox {
+                margin-right: 10px;
+            }
+            
+            .form__grupo-terminos,
+            .form__mensaje,
+            .form__mensaje-exito,
+            .form__grupo-btn-enviar {
+                grid-column: 1;
+            }
+            
+            .form__mensaje {
+                display: none;
+                height: 45px;
+                line-height: 45px;
+                color: white;
+                background: #bb2929;
+                padding: 0 15px;
+                border-radius: 10px;
+            
+                p {
+                    margin: 0;
+                }
+            }
+            
+            .form__mensaje-activo {
+                display: block;
+            
+            }
+            
+            .form__grupo-btn-enviar {
+                display: flex;
+                //flex-direction: column;
+                align-items: center;
+            }
+            
+            .form__btn {
+                height: 45px;
+                line-height: 45px;
+                font-weight: bold;
+                color: $color-white;
+                background: $color-bckgrd;
+                border: none;
+                border-radius: 10px;
+                width: 30%;
+                cursor: pointer;
+                transition: .1s ease all;
+            }
+            
+            .form__btn:hover {
+                box-shadow: 3px 8px 30px rgba(163, 163, 163, 1);
+            }
+            
+            .form__mensaje-exito {
+                display: none;
+                height: 45px;
+                line-height: 45px;
+                color: white;
+                background: #119200;
+                padding: 0 15px;
+                border-radius: 10px;
+                
+                p {
+                    margin: 0;
+                }
+            }
+            
+            .form__mensaje-exito-activo {
+                display: block;
+            }
+            
+            /* Para Validación */
+            .form__grupo-correcto .form__validacion-estado {
+                color: #1ed12d;
+                opacity: 1;
+            }
+            
+            .form__grupo-incorrecto .form__label {
+                color: #bb2929;
+            }
+            
+            .form__grupo-incorrecto .form__validacion-estado {
+                color: #bb2929;
+                opacity: 1;
+            }
+            
+            .form__grupo-incorrecto .form__input {
+                border-bottom: .2rem solid rgba(187, 41, 41, 0.5);
+            }
+        }
+    }
+}

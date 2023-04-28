@@ -1,0 +1,64 @@
+// PRICING - PLANES
+.pricing {
+
+    .box-container{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-between;
+    
+        .box {
+            flex: 1 1 20rem;
+            text-align: center;
+            background: $color-white;
+            border: .1rem solid rgba(0,0,0,.2);
+            border-radius: 1rem;
+            box-shadow: 0 .5rem .5rem rgba(0,0,0,.2);
+            transition: .2s linear;
+            margin: 1rem;
+            padding: 1rem 1rem;
+    
+            .title {
+                font-size: 1.8rem;
+                color: $color-titulo;
+                padding-top: 1rem;
+            }
+    
+            .plan {
+                font-size: 1.5rem;
+                font-weight: 900;
+                color: $color9;
+                padding:1rem 0;
+    
+                span {
+                    font-size: 1.3rem;
+                    color: $color-grey2;
+                }
+            }
+
+            p {
+                font-size: 1rem;
+                color: $color-grey2;
+            }
+    
+            ul {
+                padding: 1rem 0;
+                list-style: none;
+    
+                li {
+                    font-size: 1.2rem;
+                    color: $color-grey2;
+                    padding:.3rem 0;
+    
+                    .fa-check {
+                        color: $color0;
+                    }
+                }
+            }
+
+            .box:hover {
+                border: .1rem solid $color9;
+            }
+        }
+    }
+}

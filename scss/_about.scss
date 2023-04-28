@@ -1,0 +1,41 @@
+// ABOUT
+.about {
+    padding-bottom: 3rem;
+
+    .column {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+
+        .image {
+            flex: 1 1 40%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .content {
+            flex: 1 1 60%;
+
+            h3 {
+                font-size: 1.5rem;
+                color: $color-titulo;
+            }
+
+            p {
+                font-size: 1.3rem;
+                color: $color-grey2;
+                padding: 1rem 0;
+            }
+
+            .buttons {
+
+                a:last-child {
+                    margin-left: .1rem;
+                }
+            }
+        }
+    }
+}

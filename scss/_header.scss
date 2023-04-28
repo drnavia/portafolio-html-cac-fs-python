@@ -1,0 +1,54 @@
+// HEADER
+header {
+    display: flex;
+    position: fixed;
+    top:0;
+    left:0;
+    align-items: center;
+    justify-content: space-between;
+    background: $color-header;
+    box-shadow: 0 .5rem .5rem rgba(0,0,0,.2);
+    width:100%;
+    //padding: .8rem 9%;
+    z-index: 1000;
+
+    .logo {
+        font-size: 1.82rem;
+        font-weight: 900;
+        color: $color-grey1;
+
+        span{
+            color: $color9;
+
+            span{
+                color: $color0;
+            }
+        }
+    }
+
+    .menu {
+
+        a {
+            font-size: 1rem;
+            font-weight: 600;
+            color: $color-black;
+            margin-left: 1rem;
+        }
+
+        a:hover {
+            color: $color0;
+        }
+    }
+
+    input {
+        display: none;
+    }
+
+    label {
+        font-size: 2rem;
+        color: $color-black;
+        cursor: pointer;
+        visibility: hidden;
+        opacity: 0;
+    }
+}

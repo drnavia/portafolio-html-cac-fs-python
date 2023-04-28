@@ -1,0 +1,44 @@
+// SERVICES - SERVICIOS
+.services {
+    background: $color-white;
+
+    .box-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-between;
+        background: $color-white;
+
+        .box {
+            flex: 1 1 20rem;
+            text-align: center;
+            background: $color-white;
+            border: .1rem solid rgba(0,0,0,.2);
+            border-radius: 1rem;
+            box-shadow: 0 .5rem .5rem rgba(0,0,0,.2);
+            transition: .2s linear;
+            margin: 1rem;
+            padding: 1rem 1rem;
+
+            img {
+                height: 10rem;
+            }
+
+            h3 {
+                font-size: 1.8rem;
+                color:$color-titulo;
+                padding-top: 1rem;
+            }
+
+            p {
+                font-size: 1rem;
+                color: $color-grey2;
+                padding: 1rem 0;
+            }
+        }
+
+        .box:hover{
+            border: .1rem solid $color0;
+        }
+    }
+}

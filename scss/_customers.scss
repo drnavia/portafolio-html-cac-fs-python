@@ -1,0 +1,137 @@
+// CUSTOMERS - CLIENTES 
+.customers {
+    
+    .box-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-between;
+
+        .box {
+            position: relative;
+            flex: 1 1 18%;
+            text-align: center;
+            background: $color-white;
+            border: .1rem solid rgba(0,0,0,.2);
+            border-radius: 1rem;
+            box-shadow: 0 .5rem .5rem rgba(0,0,0,.2);
+            margin: 1rem;
+            padding: 2rem 1rem 1rem 1rem;
+
+            .client {
+
+                img {
+                    height: 10rem;
+                    //width: 100%;
+                }
+                
+                h3 {
+                    font-size: 2rem;
+                    color: $color-titulo;
+                    
+                    span {
+                        color: $color0;
+                    }
+                }
+
+                .tools {
+
+                    i {
+                        font-size: 1.3rem;
+                        color: $color9;
+                        margin-right: .5rem;
+                        padding: .3rem 0;
+                    }
+                }
+
+                .description {
+                    font-size: 1rem;
+                    color:#666;
+                    padding: 1rem;
+                }
+
+                .modal-web {
+                    display: none;
+                    position: fixed;
+                    left: 0;
+                    top: 0;
+                    overflow: auto;
+                    background: rgba(0,0,0,0.4);
+                    height: 100%;
+                    width: 100%;
+                    z-index: 1;
+
+                    .modal-content {
+                        position: relative;
+                        background: white;
+                        border: 1px solid $color-grey1;
+                        border-radius: 1rem;
+                        box-shadow: 0 .5rem .5rem rgba(0,0,0,.2);
+                        animation-name: animatetop;
+                        animation-duration: 0.4s;
+                        width: 35rem;
+                        margin: auto;
+                        margin-top: 10rem;
+                        padding: 1rem;
+
+                        .close {
+                            float: right;
+                            font-size: 3rem;
+                            font-weight: bold;
+                            color: black;
+                            margin-top: -.5rem;
+                        }
+                        
+                        .close:hover,
+                        .close:focus {
+                            text-decoration: none;
+                            color: black;
+                            cursor: pointer;
+                        }
+
+                        .modal-header {
+                            background: $color9;
+                            border-radius: .4rem;
+                            padding: .5rem 1rem;
+
+                            p {
+                                font-size: 2rem;
+                                font-weight: 900;
+                                color: $color-titulo;
+                                
+                                span {
+                                    color: $color0
+                                }
+                            }
+                        }
+                        
+                        .modal-body {
+                            padding: .5rem 1rem;
+
+                            img {
+                                height: 20rem;
+                            }
+
+                            p {
+                                font-size: 1.3rem;
+                                color: $color-grey2;
+                            }
+                        }
+
+                        @keyframes animatetop {
+                            from {top: -300px; opacity: 0}
+                            to {top: 0; opacity: 1}
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .box:hover{
+            border: .1rem solid $color0;
+        }
+    }
+}
+
+

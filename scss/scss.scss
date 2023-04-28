@@ -1,0 +1,37 @@
+@import "scss/general";
+@import "scss/header";
+@import "scss/home";
+@import "scss/about";
+@import "scss/services";
+@import "scss/pricing";
+@import "scss/customers";
+@import "scss/contact";
+@import "scss/footer";
+@import "scss/media";
+
+
+/*
+----------------------------
+# PASOS PREVIOS IMPORTANTES:
+----------------------------
+1) Ejecutar "npm init", para que se cree el archivo "package.json" (desde la raiz del proyecto): 
+    $ npm init
+2) Instalar los módulos "node-sass" y "nodemon" (desde la raiz del proyecto): 
+    $ npm install -D node-sass nodemon
+3) Crear las carpetas SCSS y CSS y sus archivos respectivos.
+4) Edita el archivo "package.json" e inserta las lineas "build-css" y "watch-css" dentro de "scripts":
+--- Código modificado ---
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/sass.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+---
+5) Ejecutar "npm run watch-css", para que el compilador se quede mirando las modificaciones en el archivo ".scss".
+  $ npm run watch-css
+-----------------------------------
+# COMO RECREAR LOS MODULOS DE NODE:
+-----------------------------------
+a) Ejecutar "npm install", desde la raiz del proyecto (donde se ubica el archivo "package.json"):
+  $ npm install
+*/

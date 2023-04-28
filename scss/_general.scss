@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Mina:wght@400;700&display=swap'); //font-family: 'Mina', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); //font-family: 'Lobster', cursive;
+
+// VARIABLES
+/*
+$gradient: linear-gradient(90deg, var($purple), var($pink));
+*/
+
+$color0: #F72585;
+$color1: #B5179E;
+$color2: #7209B7;
+$color3: #560BAD;
+$color4: #480CA8;
+$color5: #3A0CA3;
+$color6: #3F37C9;
+$color7: #4361EE;
+$color8: #4895EF;
+$color9: #4CC9F0;
+
+$color-white:  #FFFFFF;
+$color-black:  #000000;
+$color-yellow: #ffc107;
+$color-grey0:  #f1f1f1;
+$color-grey1:  #ADADAD;
+$color-grey2:  #666666;
+
+$color-header: #FFFFFF;
+$color-bckgrd: #150538;
+$color-titulo: #150538;
+$color-footer: #150538;
+
+// GENERAL
+* {
+    font-family: 'Mina', sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+*::selection {
+    background: $color9;
+    color: $color-white;
+}
+
+html {
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+body {
+    background: $color-grey0;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    min-height: 100vh;
+    padding: 0 10%;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+}
+
+header {
+    padding: .8rem 10%;
+}
+
+footer {
+    padding: .8rem 10%;
+}
+
+.heading {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: $color0;
+    text-align: center;
+    text-transform: uppercase;
+    background-clip: text;
+    padding: 1rem;
+}
+
+.icons { // Home
+    display: inline-block;
+    font-size: 2rem;
+    color: $color9;
+    margin-top: 1rem;
+    padding: .8rem 1rem;
+}
+
+.btn { // Nosotros | Servicios | Planes | Nuestros Clientes | Contacto
+    display: inline-block;
+    font-size: 1.1rem;
+    color: $color-white;
+    background: $color-bckgrd;
+    border-radius: 2rem;
+    box-shadow: 0 .5rem .5rem rgba(0,0,0,.2);
+    cursor: pointer;
+    transition: all .3s linear;
+    margin: 1rem 0;
+    margin-right: 1rem;
+    padding: .5rem 2rem;
+}
+
+.btn:hover { // Nosotros | Servicios | Planes | Nuestros Clientes | Contacto
+    transform: scale(1.1);
+}
+
+/* PERSONALIZACIÓN - CAROUSEL DE BOOTSTRAP */
+.carousel-caption {
+    background: rgba(247,37,133,.7);
+    border-radius: 1rem;
+    width: auto;
+    padding: 1.25rem;
+    margin-bottom: 4rem;
+
+    .titulo {
+        color: black;
+        font-weight: 900;
+
+        span {
+            color: $color9;
+        }
+    }
+
+    p {
+        color: white;
+    }
+}
+.carousel-indicators {
+    margin-bottom: 3rem;
+}
